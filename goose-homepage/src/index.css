@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Pretendard Variable', sans-serif;
+}

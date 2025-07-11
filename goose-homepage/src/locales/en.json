@@ -1,0 +1,67 @@
+{
+  "home": { "title": "lifegoose" },
+  "hero": {
+    "title": "“In the midst of a busy day,\nour own secret space”",
+    "description": "lifegoose is an app for recording and sharing.",
+    "emailPlaceholder": "Enter your email address",
+    "cta": "Get Started Now",
+    "successMessage": "Ready to start! 🚀"
+  },
+  "why": {
+    "title": "Why lifegoose?",
+    "items": [
+      {
+        "title": "A Safe Space for Family",
+        "description": "Provides a private communication space exclusively for family members, free from external interference."
+      },
+      {
+        "title": "Strong Privacy Protection",
+        "description": "All data is securely protected, with no sharing."
+      },
+      {
+        "title": "Emotional Family Connection",
+        "description": "Record and share precious moments together to deepen family bonds."
+      }
+    ]
+  },
+  "features": {
+    "headline": "Every Moment with Family, Together with lifegoose",
+    "paragraph": "Stay connected with calls, photos, and schedules as a family",
+    "items": [
+      { "title": "Family Chat", "description": "A dedicated chat feature for easy family communication anytime." },
+      { "title": "Album Sharing", "description": "Collect and enjoy precious family photos and videos in one place." },
+      { "title": "Schedule Management", "description": "Keep track of everyone’s schedule and never miss important appointments." }
+    ]
+  },
+  "calendar": {
+    "title": "Never Miss Family Schedules",
+    "description": "The family calendar feature helps everyone stay in sync by sharing and managing important dates, appointments, and events."
+  },
+  "security": {
+    "title": "🛡️ Security is Standard,<br class=\"block md:hidden\"> We Keep Evolving",
+    "items": [
+      { "title": "Strict Access Control", "description": "Only authorized family members can access the data." },
+      { "title": "Continuous Security Updates", "description": "Regularly updated to protect against the latest security threats." },
+      { "title": "Transparent Communication Promise", "description": "We actively incorporate user feedback to improve our services." }
+    ]
+  },
+  "testimonials": {
+    "title": "Real Feedback from Families",
+    "items": [
+      { "name": "Ji-Hyun Kim", "review": "Communication with my kids has become so much easier, and the album feature has helped us create many memories!" },
+      { "name": "Min-Jun Park", "review": "I’m getting to know my family better. It feels really reassuring." },
+      { "name": "Su-Young Lee", "review": "With the family calendar, I can see everyone’s schedule at a glance, and there are no more overlapping appointments. Highly recommend!" }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Spend Time with Your Family?",
+    "cta": "Go to App Store"
+  },
+  "subscription": {
+    "title": "Stay Updated with lifegoose",
+    "description": "Subscribe to our newsletter for the latest updates and exclusive offers.",
+    "emailPlaceholder": "Enter your email",
+    "cta": "Subscribe Now",
+    "successMessage": "Subscription successful! 🚀"
+  }
+}

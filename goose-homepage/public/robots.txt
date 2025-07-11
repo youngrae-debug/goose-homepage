@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /service-terms
+Disallow: /privacy-terms
+Disallow: /newsletter/verify/success
+Disallow: /newsletter/verify/fail
+
+Sitemap: https://lifegoose.com/sitemap.xml
