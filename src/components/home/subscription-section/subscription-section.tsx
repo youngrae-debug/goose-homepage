@@ -44,7 +44,7 @@ export function SubscriptionSection() {
   }
 
   return (
-    <section className="relative bg-gradient-to-br from-white via-purple-50/30 to-indigo-50/30 px-6 py-24 text-center text-black overflow-hidden">
+    <section className="relative bg-gradient-to-br from-white via-purple-50/30 to-indigo-50/30 px-6 py-24 text-center text-black overflow-hidden min-h-[100vh] flex items-center">
       {/* Background elements */}
       <div className="absolute inset-0">
         <motion.div
