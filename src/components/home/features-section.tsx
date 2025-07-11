@@ -36,7 +36,7 @@ export function FeaturesSection() {
   }
 
   return (
-    <section className="relative bg-white px-6 py-20 md:px-12 md:py-32 overflow-hidden">
+    <section className="relative bg-white px-6 py-20 md:px-12 md:py-32 min-h-[100vh] flex items-center overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{

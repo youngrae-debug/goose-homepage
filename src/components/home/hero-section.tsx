@@ -20,7 +20,7 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative min-h-[100vh] flex flex-col items-center justify-center overflow-hidden py-20 md:py-32">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100" />
       

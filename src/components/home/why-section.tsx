@@ -31,7 +31,7 @@ export function WhySection() {
   }
 
   return (
-    <section className="relative bg-gradient-to-br from-gray-50 via-purple-50/30 to-indigo-50/30 px-6 py-20 md:px-12 md:py-32 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-gray-50 via-purple-50/30 to-indigo-50/30 px-6 py-20 md:px-12 md:py-32 min-h-[100vh] flex items-center overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <motion.div

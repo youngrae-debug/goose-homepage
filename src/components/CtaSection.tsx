@@ -7,7 +7,7 @@ export const CtaSection: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="relative bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 text-white py-24 md:py-40 px-6 md:px-12 text-center overflow-hidden">
+    <section className="relative bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 text-white py-20 md:py-32 px-6 md:px-12 text-center min-h-[100vh] flex items-center overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <motion.div

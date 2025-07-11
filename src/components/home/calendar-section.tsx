@@ -5,7 +5,7 @@ export function CalendarSection() {
   const { t } = useTranslation()
 
   return (
-    <section className="relative max-w-8xl mx-auto px-6 py-20 md:px-12 md:py-32 overflow-hidden">
+    <section className="relative max-w-8xl mx-auto px-6 py-20 md:px-12 md:py-32 min-h-[100vh] flex items-center overflow-hidden">
       {/* Background with subtle pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30" />
       
