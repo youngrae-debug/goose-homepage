@@ -22,12 +22,12 @@ export function HeroSection() {
   return (
     <section className="relative min-h-[100vh] flex flex-col items-center justify-center overflow-hidden py-20 md:py-32">
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100" />
+      <div className="absolute inset-0 bg-white" />
       
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl"
+          className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-purple-400/30 to-pink-400/30 rounded-full blur-3xl"
           animate={{
             x: [0, 30, 0],
             y: [0, -30, 0],
@@ -39,7 +39,7 @@ export function HeroSection() {
           }}
         />
         <motion.div
-          className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl"
+          className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-br from-blue-400/30 to-cyan-400/30 rounded-full blur-3xl"
           animate={{
             x: [0, -30, 0],
             y: [0, 30, 0],
@@ -48,6 +48,18 @@ export function HeroSection() {
             duration: 10,
             repeat: Infinity,
             ease: "easeInOut"
+          }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-yellow-300/20 to-orange-300/20 rounded-full blur-3xl"
+          animate={{
+            rotate: [0, 360],
+            scale: [1, 1.1, 1],
+          }}
+          transition={{
+            duration: 25,
+            repeat: Infinity,
+            ease: "linear"
           }}
         />
       </div>
@@ -60,7 +72,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.h1 
-            className="mb-6 text-5xl leading-tight font-black tracking-tight bg-gradient-to-r from-gray-900 via-purple-900 to-indigo-900 bg-clip-text text-transparent md:text-6xl lg:text-7xl"
+            className="mb-6 text-5xl leading-tight font-black tracking-tight bg-gradient-to-r from-gray-900 via-purple-600 to-pink-600 bg-clip-text text-transparent md:text-6xl lg:text-7xl drop-shadow-sm"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -69,7 +81,7 @@ export function HeroSection() {
           </motion.h1>
           
           <motion.p 
-            className="mb-10 text-xl leading-relaxed font-medium text-gray-600 md:text-2xl"
+            className="mb-10 text-xl leading-relaxed font-medium text-gray-700 md:text-2xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -90,19 +102,19 @@ export function HeroSection() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t('hero.emailPlaceholder')}
-                className={`w-full sm:w-80 rounded-2xl border-0 bg-white/80 backdrop-blur-sm px-6 py-4 text-base text-gray-800 placeholder-gray-500 shadow-lg ring-1 ring-gray-200/50 focus:ring-2 focus:ring-purple-500/50 focus:outline-none transition-all duration-300 ${isShaking ? 'animate-shake' : ''}`}
+                className={`w-full sm:w-80 rounded-3xl border-0 bg-white shadow-xl px-6 py-4 text-base text-gray-800 placeholder-gray-500 ring-1 ring-gray-200 focus:ring-2 focus:ring-purple-500 focus:outline-none transition-all duration-300 hover:shadow-2xl ${isShaking ? 'animate-shake' : ''}`}
                 required
                 aria-label="이메일 입력"
               />
             </div>
             <motion.button
               type="submit"
-              className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-purple-600 to-indigo-600 px-8 py-4 font-bold text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95"
+              className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 px-8 py-4 font-bold text-white shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-105 active:scale-95"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <span className="relative z-10">{t('hero.cta')}</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-indigo-700 opacity-0 transition-opacity duration-300 hover:opacity-100" />
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-700 via-pink-700 to-orange-600 opacity-0 transition-opacity duration-300 hover:opacity-100" />
             </motion.button>
           </motion.form>
         </motion.div>
@@ -114,11 +126,11 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-400/30 to-indigo-400/30 rounded-3xl blur-2xl transform rotate-6" />
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-400/40 to-pink-400/40 rounded-3xl blur-2xl transform rotate-6" />
             <img
               src="https://placehold.co/320x640/E0E0E0/333333?text=lifegoose+App"
               alt="스마트폰 프리뷰"
-              className="relative rounded-3xl border border-white/20 shadow-2xl backdrop-blur-sm"
+              className="relative rounded-3xl border border-white/50 shadow-2xl"
             />
           </div>
         </motion.div>

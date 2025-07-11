@@ -53,10 +53,10 @@ export function FeaturesSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="mb-6 text-4xl leading-tight font-black text-gray-900 md:text-5xl lg:text-6xl">
+          <h2 className="mb-6 text-4xl leading-tight font-black bg-gradient-to-r from-gray-900 via-purple-600 to-pink-600 bg-clip-text text-transparent md:text-5xl lg:text-6xl drop-shadow-sm">
             {t('features.headline')}
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 mx-auto rounded-full" />
         </motion.div>
 
         <motion.div 
@@ -74,20 +74,20 @@ export function FeaturesSection() {
                 variants={itemVariants}
                 className="group relative"
               >
-                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-white to-gray-50 p-8 shadow-lg border border-gray-100/50 backdrop-blur-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                <div className="relative overflow-hidden rounded-3xl bg-white p-8 shadow-xl border border-gray-100 transition-all duration-500 hover:shadow-2xl hover:-translate-y-3">
                   {/* Gradient overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-pink-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
                   
                   <div className="relative z-10">
-                    <div className="mb-6 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-indigo-500 text-white shadow-lg">
+                    <div className="mb-6 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 text-white shadow-lg">
                       <Icon size={28} />
                     </div>
                     
-                    <h3 className="mb-4 text-2xl font-bold text-gray-900 group-hover:text-purple-700 transition-colors duration-300">
+                    <h3 className="mb-4 text-2xl font-bold text-gray-900 group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-pink-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                       {item.title}
                     </h3>
                     
-                    <p className="text-base leading-relaxed text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+                    <p className="text-base leading-relaxed text-gray-700 group-hover:text-gray-800 transition-colors duration-300">
                       {item.description}
                     </p>
                   </div>
